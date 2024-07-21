@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const DISABLED = false;
 const DEFAULT_PROMPT =
-  "Uma cena cinematográfica de um garoto utilizando um óculos de realidade virtual na lua";
+  "Uma cena de um menino utilizando um óculos de realidade virtual na lua";
 
 function randomSeed() {
   return Math.floor(Math.random() * 10000000).toFixed(0);
