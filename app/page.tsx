@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const DISABLED = false;
 const DEFAULT_PROMPT =
-  "A cinematic shot of a baby raccoon wearing an intricate italian priest robe";
+  "Uma cena cinematográfica de um bebê guaxinim vestindo uma complexa túnica de padre italiano";
 
 function randomSeed() {
   return Math.floor(Math.random() * 10000000).toFixed(0);
@@ -129,7 +129,7 @@ export default function Lightning() {
                         handleOnChange(e.target.value);
                       }}
                       className="font-light w-full"
-                      placeholder="Type something..."
+                      placeholder="Digite algo..."
                       value={prompt}
                     />
                   </div>
@@ -152,7 +152,7 @@ export default function Lightning() {
                 <div className="flex-1 flex-col flex items-center justify-center">
                   {image && inferenceTime && (
                     <div className="flex flex-row space-x-1 text-sm w-full mb-2">
-                      <span className="text-neutral-500">Inference time:</span>
+                      <span className="text-neutral-500">Tempo de resposta:</span>
                       <span
                         className={
                           !inferenceTime ? "text-neutral-500" : "text-green-400"
@@ -174,7 +174,7 @@ export default function Lightning() {
             </div>
             <div className="container flex flex-col items-center justify-center my-4">
               <p className="text-sm text-base-content/70 py-4 text-center text-neutral-400">
-                This playground is hosted on{" "}
+                Esse ambiente está hospedado em {" "}
                 <strong>
                   <a
                     href="https://fal.ai"
@@ -184,10 +184,10 @@ export default function Lightning() {
                     fal.ai
                   </a>
                 </strong>{" "}
-                and is for demonstration purposes only.
+                e é apenas para fins de demonstração criado por José Belchior.
               </p>
               <div className="flex flex-row items-center space-x-2">
-                <span className="text-xs font-mono">powered by</span>
+                <span className="text-xs font-mono">distribuido por</span>
                 <Link href="https://fal.ai" target="_blank">
                   <ModelIcon />
                 </Link>
